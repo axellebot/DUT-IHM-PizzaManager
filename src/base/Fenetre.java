@@ -1,10 +1,12 @@
 package base;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.util.ArrayList;
 import javax.swing.*;
-import javax.swing.border.*;
+import javax.swing.border.BevelBorder;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 /**
  *
@@ -21,6 +23,7 @@ public class Fenetre extends JFrame implements ActionListener, FocusListener {
         this.setTitle("Changement de base");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setIconImage(new ImageIcon(this.getClass().getResource("mainicon.png")).getImage());
+
         initialisation();
 
         //ajout des ecouteurs

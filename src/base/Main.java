@@ -12,5 +12,6 @@ public class Main {
         Fenetre fen = new Fenetre();
         fen.setVisible(true);
         fen.setSize(600, 320);
+        fen.setLocation(null);
     }
 }
