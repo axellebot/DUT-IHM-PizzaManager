@@ -4,7 +4,7 @@ package pizza;/*
  * and open the template in the editor.
  */
 
-import javax.swing.UIManager;
+import javax.swing.*;
 
 /**
  *
@@ -19,11 +19,11 @@ public class Main {
         try{
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }catch(Exception ex){
-            
+            System.out.println(ex.getMessage());
         }
         
         Fenetre fen = new Fenetre();
-
+        fen.setLocationRelativeTo(null);
         fen.setVisible(true);
         // fen.setSize(600, 320);
     }

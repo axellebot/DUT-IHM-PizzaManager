@@ -10,8 +10,8 @@ public class Main {
      */
     public static void main(String[] args) {
         Fenetre fen = new Fenetre();
+        fen.setLocationRelativeTo(null);
         fen.setVisible(true);
         fen.setSize(600, 320);
-        fen.setLocation(null);
     }
 }
